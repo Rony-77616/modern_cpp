@@ -30,6 +30,8 @@ public:
         std::cout<<"num = "<<num<<std::endl;
     }
 
+    
+
 private:
 int num;
 };
@@ -102,6 +104,7 @@ int main(){
         //若面对数组时不想自己写删除器，可以用c++提供的默认数组删除器函数
 
         std::shared_ptr<Test>(new Test[5], std::default_delete<Test[]>());
+
 
     return 0;
 }
