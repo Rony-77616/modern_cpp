@@ -166,7 +166,7 @@ strace：用来观察程序运行时向Linux内核发出的请求，也叫系统
    - cd /：进入根目录
    - cd ..:进入上一级目录
    - cd cpp_practice:进入当前目录下的cpp_practice文件
-   - midir cpp_practice:在当前目录创建联系文件夹
+   - mkdir cpp_practice:在当前目录创建联系文件夹
 
 2) ps查看进程
    - ps:默认查看与当前用户身份、当前终端相关联的进程.
@@ -406,7 +406,7 @@ handler 把 stop 改为 1，然后返回->
 ## open
 open是Linux提供的函数，用来打开文件或者其他输入输出资源。他返回一个文件描述符。
 ```cpp
-int fd = opern("data.txt",O_WRONLY| O_CREAT,0644);
+int fd = open("data.txt",O_WRONLY| O_CREAT,0644);
 ```
 其中参数：
 - "data.txt":要打开的文件路径（相对、绝对都可以）
